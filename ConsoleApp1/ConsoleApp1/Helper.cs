@@ -16,7 +16,9 @@ namespace Helpers
         public static string LeerConfiguracion()
         {
             BinaryReader BinArchR = new BinaryReader(File.Open("destino.dat", FileMode.Open));
-            return BinArchR.ReadString();
+            string Arch = BinArchR.ReadString();
+            BinArchR.Close();
+            return Arch;
         }
     }
 }
