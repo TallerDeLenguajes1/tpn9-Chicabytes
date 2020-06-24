@@ -254,7 +254,6 @@ namespace Helpers
                         break;
                 }
             }
-            GuardarArchivo(Morse);
             return Morse;
         }
 

@@ -9,7 +9,9 @@ namespace ConsoleApp2
         {
             Console.Write("Ingrese el texto a traducir, en castellano: ");
             string Texto_a_Traducir = Console.ReadLine();
-            Console.WriteLine("El texto traducido es: " + ConversorDeMorse.TextoAMorse(Texto_a_Traducir));
+            string Traduccion = ConversorDeMorse.TextoAMorse(Texto_a_Traducir);
+            Console.WriteLine("El texto traducido es: " + Traduccion);
+            ConversorDeMorse.GuardarArchivo(Traduccion);
             Console.WriteLine("El texto reconvertido es: " + ConversorDeMorse.LeerArchivo());
         }
     }
